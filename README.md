@@ -1,25 +1,24 @@
-# CODING AGENTS: READ THIS FIRST
+# Pixelated Text Playground
 
-This is a **handoff bundle** from Claude Design (claude.ai/design).
+Type anything and watch it materialize through shrinking pixel blocks. A browser-based interactive experiment with live controls for every parameter and export support.
 
-A user mocked up designs in HTML/CSS/JS using an AI design tool, then exported this bundle so a coding agent can implement the designs for real.
+## Features
 
-## What you should do — IMPORTANT
+- Real-time pixelated text reveal animation
+- Live controls for pixel size, speed, color, and timing
+- Export to PNG, WebM, and JSON
+- No dependencies — pure HTML/CSS/JS
 
-**Read the chat transcripts first.** There are 1 chat transcript(s) in `chats/`. The transcripts show the full back-and-forth between the user and the design assistant — they tell you **what the user actually wants** and **where they landed** after iterating. Don't skip them. The final HTML files are the output, but the chat is where the intent lives.
+## Usage
 
-**Read `project/Pixelated Text Playground.html` in full.** The user had this file open when they triggered the handoff, so it's almost certainly the primary design they want built. Read it top to bottom — don't skim. Then **follow its imports**: open every file it pulls in (shared components, CSS, scripts) so you understand how the pieces fit together before you start implementing.
+Open `Pixelated Text Playground.html` directly in any modern browser. No build step required.
 
-**If anything is ambiguous, ask the user to confirm before you start implementing.** It's much cheaper to clarify scope up front than to build the wrong thing.
+## Project structure
 
-## About the design files
+- `Pixelated Text Playground.html` — self-contained app
+- `project/` — source design files
+- `chats/` — design iteration transcripts
 
-The design medium is **HTML/CSS/JS** — these are prototypes, not production code. Your job is to **recreate them pixel-perfectly** in whatever technology makes sense for the target codebase (React, Vue, native, whatever fits). Match the visual output; don't copy the prototype's internal structure unless it happens to fit.
+---
 
-**Don't render these files in a browser or take screenshots unless the user asks you to.** Everything you need — dimensions, colors, layout rules — is spelled out in the source. Read the HTML and CSS directly; a screenshot won't tell you anything they don't.
-
-## Bundle contents
-
-- `README.md` — this file
-- `chats/` — conversation transcripts (read these!)
-- `project/` — the `Pixelated text` project files (HTML prototypes, assets, components)
+Ideated by [Memo Es](https://memoesparza.com) · Implemented with [Claude Code](https://claude.ai/code) help
