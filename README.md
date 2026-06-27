@@ -11,11 +11,11 @@ Type anything and watch it materialize through shrinking pixel blocks. A browser
 
 ## Usage
 
-Open `Pixelated Text Playground.html` directly in any modern browser. No build step required.
+Open the live playground at https://memo-es.github.io/pixelated-text/, or open `index.html` directly in any modern browser. No build step required.
 
 ## Project structure
 
-- `Pixelated Text Playground.html` — self-contained app
+- `index.html` — self-contained app
 - `project/` — source design files
 - `chats/` — design iteration transcripts
 
