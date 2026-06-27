@@ -1,7 +1,7 @@
 /* ═══════════════════════════════════════════════════════════════
-   SIENA DESIGN SYSTEM — Colors & Type
-   Inspired by the Italian city of Siena: bougainvillea cascading
-   down ancient walls, Renaissance elegance, and timeless beauty.
+   DESIGN SYSTEM — Colors & Type
+   A warm, earthy palette: bougainvillea, sage, ochre, and
+   terracotta, balanced against deep charcoal neutrals.
    Lifted from: my-prototype/src/app/globals.css
    ═══════════════════════════════════════════════════════════════ */
 
@@ -86,41 +86,41 @@
   --ring: #A8A29E;
 
   /* ─────────────────────────────────────────────────────────────
-     SIENA BRAND PALETTE
+     BRAND PALETTE
      ───────────────────────────────────────────────────────────── */
-  --siena-bougainvillea: #9B4DAF;       /* the primary */
-  --siena-bougainvillea-dark: #7A3D8A;
-  --siena-bougainvillea-light: #C77DDB;
+  --bougainvillea: #9B4DAF;       /* the primary */
+  --bougainvillea-dark: #7A3D8A;
+  --bougainvillea-light: #C77DDB;
 
-  --siena-sage: #3D5A3F;                /* deep foliage green */
-  --siena-sage-dark: #2D4530;
-  --siena-sage-light: #5D7A5F;
+  --sage: #3D5A3F;                /* deep foliage green */
+  --sage-dark: #2D4530;
+  --sage-light: #5D7A5F;
 
-  --siena-ochre: #B8860B;                /* warm gold */
-  --siena-ochre-dark: #8B6508;
-  --siena-ochre-light: #D4A84B;
+  --ochre: #B8860B;                /* warm gold */
+  --ochre-dark: #8B6508;
+  --ochre-light: #D4A84B;
 
-  --siena-terracotta: #C45D35;           /* warm brick — enabled/active accents */
-  --siena-terracotta-dark: #A44A28;
-  --siena-terracotta-light: #E07A54;
+  --terracotta: #C45D35;           /* warm brick — enabled/active accents */
+  --terracotta-dark: #A44A28;
+  --terracotta-light: #E07A54;
 
-  --siena-sky: #4A90C4;                  /* Tuscan sky — binary ON states */
-  --siena-sky-dark: #3875A0;
-  --siena-sky-light: #70B2D8;
+  --sky: #4A90C4;                  /* Tuscan sky — binary ON states */
+  --sky-dark: #3875A0;
+  --sky-light: #70B2D8;
 
-  --siena-chocolate: #7B5115;            /* earthy */
-  --siena-chocolate-dark: #5C3D10;
-  --siena-chocolate-light: #A67B3D;
+  --chocolate: #7B5115;            /* earthy */
+  --chocolate-dark: #5C3D10;
+  --chocolate-light: #A67B3D;
 
-  --siena-tuscan-stone: #C4B5A0;         /* warm beige — data viz neutral */
-  --siena-tuscan-stone-dark: #A89A86;
-  --siena-tuscan-stone-light: #D4C8B8;
+  --tuscan-stone: #C4B5A0;         /* warm beige — data viz neutral */
+  --tuscan-stone-dark: #A89A86;
+  --tuscan-stone-light: #D4C8B8;
 
-  --siena-stone: #8B8680;
-  --siena-cream: #FAF8F5;
-  --siena-charcoal: #1A1A1A;
-  --siena-beige: #EFE5D0;
-  --siena-off-white: #F3F0EB;
+  --stone: #8B8680;
+  --cream: #FAF8F5;
+  --charcoal: #1A1A1A;
+  --beige: #EFE5D0;
+  --off-white: #F3F0EB;
 
   /* CSAT star — App Store style warm gold */
   --csat-star: #F5C842;
@@ -177,7 +177,7 @@
 }
 
 /* ─────────────────────────────────────────────────────────────
-   DARK MODE — Warm charcoal (Siena at twilight)
+   DARK MODE — Warm charcoal (twilight)
    ───────────────────────────────────────────────────────────── */
 .dark {
   --background: #1C1917;
@@ -199,11 +199,11 @@
   --input: #44403C;
   --ring: #78716C;
 
-  --siena-bougainvillea: #C77DDB;
-  --siena-sage: #6B9F6F;
-  --siena-ochre: #D4A017;
-  --siena-terracotta: #E07A54;
-  --siena-sky: #6BB0D8;
+  --bougainvillea: #C77DDB;
+  --sage: #6B9F6F;
+  --ochre: #D4A017;
+  --terracotta: #E07A54;
+  --sky: #6BB0D8;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -226,7 +226,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--siena-bougainvillea);
+  background-color: var(--bougainvillea);
   color: #fff;
 }
 
@@ -300,8 +300,8 @@ p {
 }
 
 /* Accent text */
-.text-siena { color: var(--siena-bougainvillea); }
-.text-terracotta { color: var(--siena-terracotta); }
+.text-bougainvillea { color: var(--bougainvillea); }
+.text-terracotta { color: var(--terracotta); }
 
 /* Inline code */
 code:not(pre code) {

@@ -8,7 +8,7 @@ _Started 2026-04-21 02:48 UTC_
 
 1. Black background. beginning of video: "A new era for CX" in feature deck font. The reveal animation makes the text pixelated
 2. just black for 5 seconds
-3. end of this video "Siena Renaissance" in our feature deck font central, followed by "May 13, NYC" Same pixelated text appear effect
+3. end of this video "Renaissance" in our feature deck font central, followed by "May 13, NYC" Same pixelated text appear effect
 
 ## Assistant
 
@@ -86,18 +86,18 @@ _[tool: snip]_
 
 The animation is working nicely:
 - **0:01** – "A new era for CX" mid-pixelation (chunky blocks forming the letters) ✓
-- **0:12** – "Siena Renaissance" crisp + "May 13, NYC" in terracotta below ✓
+- **0:12** – "Renaissance" crisp + "May 13, NYC" in terracotta below ✓
 - Black beat between acts ✓
 
 The pixelated reveal looks great — coarse blocks resolve into crisp PP Editorial New type, then dissolves and returns for the finale.
 
 _[tool: fork_verifier_agent]_
 
-Delivered **Siena Renaissance Teaser.html** — a 16s 1920×1080 animation:
+Delivered **Renaissance Teaser.html** — a 16s 1920×1080 animation:
 
 1. **0–3s** · "A new era for CX" materializes out of chunky pixel blocks into crisp PP Editorial New, holds, then dissolves back to pixels
 2. **3–8s** · Pure black with a barely-there warm ambient breath
-3. **8–16s** · "Siena Renaissance" pixelates in, then "May 13, NYC" in terracotta Funnel Sans pixelates in beneath it, holds to end
+3. **8–16s** · "Renaissance" pixelates in, then "May 13, NYC" in terracotta Funnel Sans pixelates in beneath it, holds to end
 
 The pixelation is real pixel sampling (not a CSS filter) — text is drawn to an offscreen canvas, then painted back through a grid whose cell size shrinks from 56→1 px over the reveal, giving that authentic blocky-to-sharp effect. Space to play/pause, ←/→ to scrub.
 
@@ -347,7 +347,7 @@ _[tool: snip]_
 
 Yes — good questions. Two things to answer:
 
-**1. "Editorial" chip uses PP Editorial New**, which Siena calls their "feature deck font" — it's the display serif used for hero headlines. So yes, the current default is rendering in it.
+**1. "Editorial" chip uses PP Editorial New**, which is the "feature deck font" — it's the display serif used for hero headlines. So yes, the current default is rendering in it.
 
 **2. Custom font upload** — absolutely doable. Let me add that now.
 
@@ -417,7 +417,7 @@ _[tool: fork_verifier_agent]_
 
 To answer your questions directly:
 
-**Is it rendering in Feature Deck?** — Yes. The default "Editorial" chip loads **PP Editorial New**, which is Siena's feature-deck display serif (the same face used for hero headlines). When you first open the playground, "Siena Renaissance" is rendering in it.
+**Is it rendering in Feature Deck?** — Yes. The default "Editorial" chip loads **PP Editorial New**, which is the feature-deck display serif (the same face used for hero headlines). When you first open the playground, "Renaissance" is rendering in it.
 
 **Custom font loading** — now added. In the Typography section you'll see:
 

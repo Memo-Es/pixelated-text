@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Siena Renaissance Teaser</title>
+<title>Renaissance Teaser</title>
 <style>
   @font-face {
     font-family: "PP Editorial New";
@@ -231,7 +231,7 @@ function drawTrackedText(ctx, text, cx, cy, tracking, align) {
 //   0.0 – 3.0s  ACT 1: "A new era for CX" — pixelated reveal (0..1.5s),
 //                      hold crisp (1.5..2.3s), crisp-to-blocky dissolve (2.3..3.0s).
 //   3.0 – 8.0s  ACT 2: pure black hold (5s).
-//   8.0 – 16.0s ACT 3: "Siena Renaissance" pixelated reveal (8.0..9.8s),
+//   8.0 – 16.0s ACT 3: "Renaissance" pixelated reveal (8.0..9.8s),
 //                      hold (9.8..11.0s),
 //                      "May 13, NYC" pixelated reveal (11.0..12.6s),
 //                      hold (12.6..16.0s).
@@ -337,10 +337,10 @@ function Scene() {
         />
       )}
 
-      {/* ACT 3 — "Siena Renaissance" */}
+      {/* ACT 3 — "Renaissance" */}
       {titleOpacity > 0.001 && (
         <PixelatedText
-          text="Siena Renaissance"
+          text="Renaissance"
           size={220}
           weight={400}
           italic={false}
@@ -418,7 +418,7 @@ function App() {
 
   return (
     <div data-video-root data-screen-label="t=0s" style={{ position: 'fixed', inset: 0 }}>
-      <Stage width={1920} height={1080} duration={TOTAL} background="#000000" persistKey="siena-renaissance">
+      <Stage width={1920} height={1080} duration={TOTAL} background="#000000" persistKey="renaissance">
         <Scene />
       </Stage>
     </div>

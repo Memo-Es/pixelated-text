@@ -1001,7 +1001,7 @@ function App() {
   }, []);
 
   // ─ State ─
-  const [text, setText] = React.useState('Siena Renaissance');
+  const [text, setText] = React.useState('Hello World');
   const [customFonts, setCustomFonts] = React.useState([]); // [{ value, label }]
   const [loadedGoogleFonts, setLoadedGoogleFonts] = React.useState([]);
   const [fontLoading, setFontLoading] = React.useState(false);
@@ -1142,7 +1142,7 @@ function App() {
       <aside className="panel">
         <div className="panel-brand">
           <div className="panel-brand-dot" />
-          <div className="panel-brand-name">Siena · Playground</div>
+          <div className="panel-brand-name">Pixelated · Playground</div>
         </div>
         <h2 className="panel-title">Pixelated text</h2>
         <p className="panel-sub">
@@ -1612,10 +1612,10 @@ function EmbedTab({ settings }) {
   const [copied, setCopied] = React.useState('');
   const cfg = encodeURIComponent(JSON.stringify(settings));
   const htmlSnippet = `<div id="pixtext"></div>
-<` + `script src="https://siena.cx/embed/pixelated-text.js"
+<` + `script src="https://memo-es.github.io/pixelated-text/embed.js"
         data-target="pixtext"
         data-config='${JSON.stringify(settings)}'></` + `script>`;
-  const reactSnippet = `import { PixelatedText } from '@siena/pixelated-text';
+  const reactSnippet = `import { PixelatedText } from 'pixelated-text';
 
 <PixelatedText
   text={${JSON.stringify(settings.text)}}
@@ -1629,7 +1629,7 @@ function EmbedTab({ settings }) {
   maxCell={${settings.maxCell}}
   minCell={${settings.minCell}}
 />`;
-  const iframeSnippet = `<iframe src="https://siena.cx/embed/pixelated-text?c=${cfg}"
+  const iframeSnippet = `<iframe src="https://memo-es.github.io/pixelated-text/embed?c=${cfg}"
         width="800" height="300" frameborder="0"></iframe>`;
 
   const [kind, setKind] = React.useState('html');
@@ -1687,7 +1687,7 @@ function JsonTab({ settings }) {
   return (
     <>
       <h3 className="modal-title">Project JSON</h3>
-      <p className="modal-sub">Host the config yourself — feed this JSON into the Siena Pixelated Text JavaScript SDK to reproduce the exact effect.</p>
+      <p className="modal-sub">Host the config yourself — feed this JSON into the Pixelated Text JavaScript SDK to reproduce the exact effect.</p>
       <div className="code-block">{json}</div>
       <div className="copy-row">
         <button className="big-btn" style={{ flex: 1, marginTop: 0 }} onClick={download}>Download JSON</button>
